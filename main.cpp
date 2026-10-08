@@ -4,17 +4,8 @@
 using namespace std;;
 
 
-int main() { // ALL THIS WILL GO TO "SHELL" CLASS/FILE
+int main() {
 
-    parser parse;  // create parser object
-
-
-    string line;
-    while (true) {
-        cout << "Enter a command and arg";
-        if (!getline(cin,line)) {
-            break; // if error we exit
-        }  // else we continue
 
 
 
