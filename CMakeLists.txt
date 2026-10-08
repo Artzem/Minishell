@@ -3,4 +3,5 @@ project(Shell)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Shell main.cpp)
+add_executable(Shell main.cpp
+        parser.cpp)
