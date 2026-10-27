@@ -1,18 +1,26 @@
 using namespace std;
 #include <iostream>
 #include <sstream>
-class shell {
+#include "shell.h"
+#include "parser.h"
 
-   // create parser object
+        // Create Parser object
+        parser parseObj;
 
-   void run() {
-      string line;
-      while (true) {
-         cout << "Enter a command and arg \n";
-         if (!getline(cin,line) || line == "exit") {
-            break; // if error we exit
-         }  // else we continue
+      int shell::run() {
+          string line;
+          while (true) {
+              cout << "Enter a command and arg \n";
+              if (!getline(cin,line) || line == "exit") {
+                  break; // if error we exit
+              }
+              // parse the input and return an ParsedType
+              ParsedType result = parseObj.parse(line);
+
+              // Pass in the "result" to the command factory
+
+          }
+
+
+            return 0;
       }
-   }
-
-};
