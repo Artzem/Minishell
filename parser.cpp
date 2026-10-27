@@ -16,15 +16,13 @@ ParsedType parser::parse(string line) {
     }
 
     // the args
-
     while (ss >> token) {
-        result.args = token.
+        result.args.push_back(token);
     }
 
 
-
-
-
-
+    // return the result
+    return result;
+    
 };
 

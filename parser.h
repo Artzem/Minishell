@@ -1,4 +1,5 @@
 #include <vector>
+using namespace std;
 // creating a new Type
 struct ParsedType {
 
@@ -6,8 +7,9 @@ struct ParsedType {
     vector <string> args;
 };
 
+
 class parser {
 
-    ParsedType parse (string line);
+public:
+    ParsedType parse(string line);
 };
-
