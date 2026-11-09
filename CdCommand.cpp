@@ -1,9 +1,10 @@
 #include <unistd.h>
 #include "CdCommand.h"
 #include "Command.h"
+using namespace std;
 
 
-CdCommand::CdCommand(vector<string>args,ostream& out):BuiltinCommand(move(args)) {
+CdCommand::CdCommand(vector<string>args):BuiltinCommand(std::move(args)) {
 
 }
 

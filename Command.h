@@ -1,5 +1,7 @@
+#pragma once
 #include <vector>
 using namespace std;
+#include <utility>
 
 class Command {
 
@@ -7,7 +9,7 @@ public:
 
     // constructor
     // explicit (for error checks)
-    explicit Command(vector<string>args): args_(move(args)){};
+    explicit Command(vector<string>args): args_(std::move(args)){};
                     //   Command(args); args --> args_ (a permanent data space)
 
     // destructor
@@ -18,10 +20,6 @@ public:
     // default 'name' (dont need to use?)
     virtual string name() const = 0;
 
-
-private:
-
-    // why make it private
     vector<string> args_;
 
 };

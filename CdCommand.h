@@ -1,6 +1,7 @@
 #pragma once
 #include <unistd.h>
 #include "Command.h"
+using namespace std;
 
 // inherit from "Command"
 class CdCommand : public BuiltinCommand {
