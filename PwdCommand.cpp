@@ -6,7 +6,7 @@ using namespace std;
 
 
 //Call .h   // call constructor             // parent class and  pass "args" that becomes "args_"
-PwdCommand::PwdCommand(vector<string> args):BuiltinCommand(std::move(args)) {
+PwdCommand::PwdCommand(vector<string> args):Command(std::move(args)) {
 
 }
 // logic for the code

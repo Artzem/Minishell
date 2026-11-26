@@ -4,7 +4,7 @@
 using namespace std;
 
 // inherit from "Command"
-class CdCommand : public BuiltinCommand {
+class CdCommand : public Command {
 
 public:
     explicit CdCommand(vector<string> args);
