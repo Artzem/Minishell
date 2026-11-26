@@ -24,11 +24,11 @@ public:
 
 };
 
-class BuiltinCommand: public Command {
-public:
-    // We can use "Commands" constructor
-    using Command::Command;
-};
+// class BuiltinCommand: public Command {
+// public:
+//     // We can use "Commands" constructor
+//     using Command::Command;
+// };
 
 // // Commands included by the OS, but we need to make a path to use  them
 // class InternalCommand: public Command {

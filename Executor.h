@@ -4,5 +4,5 @@ using namespace std;
 
 class Executor {
 public:
-    int run(Command& command) const;
+    int run(Command& command,ParsedType& parse) const;
 };

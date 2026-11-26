@@ -2,7 +2,7 @@
 #include "Command.h"
 using namespace std;
 
-class PwdCommand: public BuiltinCommand {
+class PwdCommand: public Command {
 
 public:
 

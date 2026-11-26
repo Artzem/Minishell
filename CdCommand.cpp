@@ -4,7 +4,8 @@
 using namespace std;
 
 
-CdCommand::CdCommand(vector<string>args):BuiltinCommand(std::move(args)) {
+CdCommand::CdCommand(vector<string>args)
+:Command(std::move(args)) {
 
 }
 

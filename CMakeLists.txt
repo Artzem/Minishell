@@ -11,4 +11,9 @@ add_executable(Shell
         CommandFactory.cpp
         CdCommand.cpp
         PwdCommand.cpp
+        EchoCommand.cpp
+        ExternalCommand.cpp
+
+
+
 )

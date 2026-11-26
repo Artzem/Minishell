@@ -20,6 +20,7 @@ using namespace std;
           while (true) {
               cout << "Enter a command and arg \n";
               if (!getline(cin,line) || line == "exit") {
+                  cout <<"Wrong Command";
                   break; // if error we exit
               }
               // parse the input and return an ParsedType
@@ -30,7 +31,7 @@ using namespace std;
 
 
               // execute the command
-             statusCode = executorObj.run(*command);
+             statusCode = executorObj.run(*command,result);
           }
 
             return statusCode;
